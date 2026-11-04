@@ -1,0 +1,16 @@
+﻿kind,owner,variant,n_views,views,ref,tries,note
+role_grid,C_LEAD,OUTFIT_A,9,正面全身 | 3/4左半身 | 3/4右半身 | 左侧全身 | 正面胸像 | 右侧全身 | 背面全身 | 仰角胸像 | 俯角胸像,FACE_REF_C_LEAD.png(AI生成),3,3版候选→选1；每套服装单独一版
+role_grid,C_LEAD,OUTFIT_B,9,正面全身 | 3/4左半身 | 3/4右半身 | 左侧全身 | 正面胸像 | 右侧全身 | 背面全身 | 仰角胸像 | 俯角胸像,FACE_REF_C_LEAD.png(AI生成),3,3版候选→选1；每套服装单独一版
+role_grid,C_LEAD,OUTFIT_C,9,正面全身 | 3/4左半身 | 3/4右半身 | 左侧全身 | 正面胸像 | 右侧全身 | 背面全身 | 仰角胸像 | 俯角胸像,FACE_REF_C_LEAD.png(AI生成),3,3版候选→选1；每套服装单独一版
+role_face_ref,C_LEAD,-,1,正面高清胸像,-,2,首帧抽卡的图生图参考主力
+role_face_expr,C_LEAD,-,6,EXP_ANGER | EXP_GRIEF | EXP_SHOCK | EXP_CONTEMPT | EXP_RESOLVE | EXP_TENDER,FACE_REF_C_LEAD.png,2,6基表情小图，反推18条EXP片段
+role_grid,C_VILLAIN,OUTFIT_V,9,正面全身 | 3/4左半身 | 3/4右半身 | 左侧全身 | 正面胸像 | 右侧全身 | 背面全身 | 仰角胸像 | 俯角胸像,FACE_REF_C_VILLAIN.png(AI生成),3,3版候选→选1；每套服装单独一版
+role_face_ref,C_VILLAIN,-,1,正面高清胸像,-,2,首帧抽卡的图生图参考主力
+role_face_expr,C_VILLAIN,-,6,EXP_ANGER | EXP_GRIEF | EXP_SHOCK | EXP_CONTEMPT | EXP_RESOLVE | EXP_TENDER,FACE_REF_C_VILLAIN.png,2,6基表情小图，反推18条EXP片段
+role_grid,C_ALLY,OUTFIT_W,9,正面全身 | 3/4左半身 | 3/4右半身 | 左侧全身 | 正面胸像 | 右侧全身 | 背面全身 | 仰角胸像 | 俯角胸像,FACE_REF_C_ALLY.png(AI生成),3,3版候选→选1；每套服装单独一版
+role_face_ref,C_ALLY,-,1,正面高清胸像,-,2,首帧抽卡的图生图参考主力
+role_face_expr,C_ALLY,-,6,EXP_ANGER | EXP_GRIEF | EXP_SHOCK | EXP_CONTEMPT | EXP_RESOLVE | EXP_TENDER,FACE_REF_C_ALLY.png,2,6基表情小图，反推18条EXP片段
+scene_views,SCN_ALLEY_NIGHT,-,4,MAIN 主视角 | REVERSE 反打视角 | TOP 俯视布局 | LIGHT_REF 光线参考,-,3,四张成套出，光线方向必须自洽
+scene_views,SCN_ROOM_DUSK,-,4,MAIN 主视角 | REVERSE 反打视角 | TOP 俯视布局 | LIGHT_REF 光线参考,-,3,四张成套出，光线方向必须自洽
+item_views,ITEM_WATCH,剧情道具,4,正面 | 侧面 | 45° | HAND 手持,-,3,剧情道具需可辨认
+item_views,P_MAIN,产品,4,正面 | 侧面 | 45° | HAND 手持,-,3,文字类必须逐字核对

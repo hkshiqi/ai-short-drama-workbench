@@ -1,0 +1,4 @@
+ep,scene,shot,dur,shot_size,camera,move,first_frame_prompt,video_prompt,negative,char_ids,outfit,line,sub_text,sfx,bgm_cue,product,level,note
+1,1,1,3,ECU,EYE,STATIC,"EXTRAL_LEAD 特写镜头，平视机位，雨水顺着他下颌线滑落，他一言不发看着镜头上方，城中村巷口夜雨，身后模糊品红霓虹，顶灯冷白+品红侧反光，电影感,35mm胶片质感,浅景深,高细节皮肤纹理,自然光,8k,竖构图9:16","他脸颊的雨滴缓缓滑落，眼睫微动，幅度很小，镜头固定，3秒。","变形,多余手指,脸部扭曲,文字水印,字幕,logo,塑料感皮肤,过曝,模糊,低分辨率,动漫风,3D渲染",EXTRAL_LEAD,OUTFIT_A,—,—,雨声底噪,进,无,无,冷开场第一帧即人+雨
+1,1,2,4,CU,EYE,STATIC,"EXTRAL_LEAD 特写镜头，平视机位，他抬眼直视镜头，眼底压着怒，嘴唇微抿，…","他眼神极缓地从下往上抬起，雨水从发梢滴落，镜头固定，4秒。","…",EXTRAL_LEAD,OUTFIT_A,最后一单。,最后一单。,雨声,进,无,无,金句1
+1,1,3,3,MS,LOW,STATIC,"…","…","…",EXTRAL_LEAD,OUTFIT_A,—,—,雨声,进,无,无,交代环境·仰拍=他还有骨气

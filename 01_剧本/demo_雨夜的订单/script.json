@@ -1,0 +1,864 @@
+{
+  "project": "雨夜的订单",
+  "slug": "demo_雨夜的订单",
+  "version": "v1",
+  "spec": {
+    "eps": 1,
+    "ep_sec": 90,
+    "blocks_per_ep": 6,
+    "block_sec": 15.0,
+    "bpm": 128,
+    "bar_sec": 1.875,
+    "aspect": "9:16",
+    "lang": "zh-CN",
+    "platform": "douyin",
+    "style": {
+      "style_id": "CINEMA_REAL",
+      "overlays": [
+        "FILM_GRAIN",
+        "NEON_LIGHT"
+      ],
+      "topic": "复仇爽剧",
+      "note": "冷雨夜都市复仇，电影感写实 + 胶片颗粒 + 霓虹多色"
+    }
+  },
+  "characters": [
+    {
+      "id": "C_LEAD",
+      "name": "林昭",
+      "role": "主角",
+      "surface": "外卖员",
+      "true_id": "集团少东",
+      "want": "拿回母亲的手术费与遗物",
+      "obstacle": "继母设局夺产",
+      "weakness": "死要面子",
+      "tag": "摸左手腕表",
+      "outfits": [
+        "OUTFIT_A",
+        "OUTFIT_B",
+        "OUTFIT_C"
+      ],
+      "voice_id": "VOICE_LEAD_01",
+      "face_photo": null
+    },
+    {
+      "id": "C_VILLAIN",
+      "name": "顾曼",
+      "role": "反派",
+      "surface": "顾氏集团代董事长",
+      "true_id": "继母",
+      "want": "吞掉全部股份",
+      "obstacle": "名义上的继承人",
+      "weakness": "怕被揭老底",
+      "tag": "抬下巴看人",
+      "outfits": [
+        "OUTFIT_V"
+      ],
+      "voice_id": "VOICE_VILLAIN_01",
+      "face_photo": null
+    },
+    {
+      "id": "C_ALLY",
+      "name": "苏念",
+      "role": "女主",
+      "surface": "律所助理",
+      "true_id": "—",
+      "want": "帮林昭翻案",
+      "obstacle": "她自己的债务",
+      "weakness": "太容易心软",
+      "tag": "说话时低头看手",
+      "outfits": [
+        "OUTFIT_W"
+      ],
+      "voice_id": "VOICE_ALLY_01",
+      "face_photo": null
+    }
+  ],
+  "scenes": [
+    {
+      "id": "SCN_ALLEY_NIGHT",
+      "name": "城中村巷口·夜·雨",
+      "lock": "狭窄老旧巷子，两侧老式米白瓷砖墙与生锈空调外机，地面积水反光，残缺品红霓虹招牌横挂在左上方，顶灯冷白从上方直下，右侧品红反光，青蓝主调加品红点缀，夜雨，空气有雨雾"
+    },
+    {
+      "id": "SCN_ROOM_DUSK",
+      "name": "老式两居室客厅·夜",
+      "lock": "老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘"
+    }
+  ],
+  "items": [
+    {
+      "id": "ITEM_WATCH",
+      "name": "旧钢表",
+      "type": "剧情道具",
+      "desc": "旧钢带手表，表盘泛黄有划痕，表带为多节钢链，直径约36mm，银色"
+    },
+    {
+      "id": "P_MAIN",
+      "name": "清透精华水",
+      "type": "产品",
+      "desc": "透明磨砂玻璃瓶，圆柱瓶身，银色按压泵头，白色标签印黑字，容量30ml",
+      "brand": "BRAND_A",
+      "sku": "SERUM-30",
+      "claims": [
+        "质地细腻",
+        "清爽不闷",
+        "便携可单手取用"
+      ],
+      "claims_visual": [
+        "手背推开有柔光反光",
+        "上脸后擦毛巾不黏",
+        "从通勤小包单手取出"
+      ]
+    }
+  ],
+  "episodes": [
+    {
+      "ep": 1,
+      "title": "雨夜的订单",
+      "sec": 90.0,
+      "hard_hook": {
+        "type": "身份揭露",
+        "line": "明天，你搬出去。"
+      },
+      "blocks": [
+        {
+          "block": 1,
+          "bar_start": 1,
+          "bar_len": 8,
+          "sec": 15.0,
+          "phase": "冷开场·压",
+          "emotion_arc": "EXP_GRIEF_M → EXP_RESOLVE_M",
+          "bgm_intent": {
+            "layers": [
+              "PAD"
+            ],
+            "cue": "进"
+          },
+          "sfx_points": [
+            "雨声底噪"
+          ],
+          "soft_hook": "「最后一单。」",
+          "scene": "SCN_ALLEY_NIGHT",
+          "shots": [
+            {
+              "shot": 1,
+              "bar_start": 1,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "ECU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_GRIEF_M",
+              "expr_int": 1,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "—",
+              "sub": "—",
+              "sfx": "雨声底噪",
+              "bgm_layer": "PAD",
+              "bgm_cue": "进",
+              "ambience": "雨夜环境",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": false
+            },
+            {
+              "shot": 2,
+              "bar_start": 3,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "CU",
+              "camera": "EYE",
+              "move": "PUSH_S",
+              "expr": "EXP_GRIEF_M",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "最后一单。",
+              "sub": "最后一单。",
+              "sfx": "雨声",
+              "bgm_layer": "PAD",
+              "bgm_cue": "进",
+              "ambience": "雨夜环境",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": false
+            },
+            {
+              "shot": 3,
+              "bar_start": 5,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "MS",
+              "camera": "LOW",
+              "move": "STATIC",
+              "expr": "EXP_RESOLVE_M",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "—",
+              "sub": "—",
+              "sfx": "雨声",
+              "bgm_layer": "PAD",
+              "bgm_cue": "进",
+              "ambience": "雨夜环境",
+              "product": "无",
+              "level": "无",
+              "model_tag": "REACT",
+              "chain_break": false
+            },
+            {
+              "shot": 4,
+              "bar_start": 7,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "CU",
+              "camera": "OTS",
+              "move": "STATIC",
+              "expr": "EXP_SHOCK_M",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "你找谁。",
+              "sub": "你找谁。",
+              "sfx": "门开声",
+              "bgm_layer": "PAD",
+              "bgm_cue": "进",
+              "ambience": "雨夜环境",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": false
+            }
+          ]
+        },
+        {
+          "block": 2,
+          "bar_start": 1,
+          "bar_len": 8,
+          "sec": 15.0,
+          "phase": "铺垫·闷",
+          "emotion_arc": "EXP_CONTEMPT_M → EXP_ANGER_L",
+          "bgm_intent": {
+            "layers": [
+              "PAD",
+              "LOOP"
+            ],
+            "cue": "LOOP_IN"
+          },
+          "sfx_points": [
+            "门铃"
+          ],
+          "soft_hook": "「她认识这只表」",
+          "scene": "SCN_ALLEY_NIGHT",
+          "shots": [
+            {
+              "shot": 1,
+              "bar_start": 1,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "CU",
+              "camera": "PROFILE",
+              "move": "STATIC",
+              "expr": "EXP_CONTEMPT_M",
+              "expr_int": 2,
+              "chars": [
+                "C_VILLAIN"
+              ],
+              "outfit": "OUTFIT_V",
+              "line": "站着干什么。",
+              "sub": "站着干什么。",
+              "sfx": "—",
+              "bgm_layer": "LOOP",
+              "bgm_cue": "LOOP_IN",
+              "ambience": "楼道回声",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": true
+            },
+            {
+              "shot": 2,
+              "bar_start": 3,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "ECU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_ANGER_L",
+              "expr_int": 1,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "—",
+              "sub": "—",
+              "sfx": "—",
+              "bgm_layer": "LOOP",
+              "bgm_cue": "进",
+              "ambience": "楼道回声",
+              "product": "ITEM_WATCH",
+              "level": "无",
+              "model_tag": "HAND",
+              "chain_break": false
+            },
+            {
+              "shot": 3,
+              "bar_start": 5,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "MS",
+              "camera": "OTS",
+              "move": "STATIC",
+              "expr": "EXP_CONTEMPT_M",
+              "expr_int": 2,
+              "chars": [
+                "C_VILLAIN",
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_V",
+              "line": "东西放下，走。",
+              "sub": "东西放下，走。",
+              "sfx": "—",
+              "bgm_layer": "LOOP",
+              "bgm_cue": "进",
+              "ambience": "楼道回声",
+              "product": "无",
+              "level": "无",
+              "model_tag": "REACT",
+              "chain_break": false
+            },
+            {
+              "shot": 4,
+              "bar_start": 7,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "CU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_ANGER_L",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "—",
+              "sub": "—",
+              "sfx": "—",
+              "bgm_layer": "LOOP",
+              "bgm_cue": "进",
+              "ambience": "楼道回声",
+              "product": "ITEM_WATCH",
+              "level": "无",
+              "model_tag": "HAND",
+              "chain_break": false
+            }
+          ]
+        },
+        {
+          "block": 3,
+          "bar_start": 1,
+          "bar_len": 8,
+          "sec": 15.0,
+          "phase": "加压·紧",
+          "emotion_arc": "EXP_CONTEMPT_H → EXP_GRIEF_M",
+          "bgm_intent": {
+            "layers": [
+              "PAD",
+              "LOOP",
+              "STRINGS"
+            ],
+            "cue": "BEAT@3"
+          },
+          "sfx_points": [
+            "雷声"
+          ],
+          "soft_hook": "「这表你哪来的」",
+          "scene": "SCN_ROOM_DUSK",
+          "shots": [
+            {
+              "shot": 1,
+              "bar_start": 1,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "MS",
+              "camera": "LOW",
+              "move": "STATIC",
+              "expr": "EXP_CONTEMPT_H",
+              "expr_int": 3,
+              "chars": [
+                "C_VILLAIN"
+              ],
+              "outfit": "OUTFIT_V",
+              "line": "这块表，早该熔了。",
+              "sub": "这块表，早该熔了。",
+              "sfx": "雷声",
+              "bgm_layer": "STRINGS",
+              "bgm_cue": "BEAT@3",
+              "ambience": "雨声渐大",
+              "product": "无",
+              "level": "无",
+              "model_tag": "HERO",
+              "chain_break": true
+            },
+            {
+              "shot": 2,
+              "bar_start": 3,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "ECU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_GRIEF_M",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "—",
+              "sub": "—",
+              "sfx": "—",
+              "bgm_layer": "STRINGS",
+              "bgm_cue": "进",
+              "ambience": "雨声渐大",
+              "product": "ITEM_WATCH",
+              "level": "无",
+              "model_tag": "HAND",
+              "chain_break": false
+            },
+            {
+              "shot": 3,
+              "bar_start": 5,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "CU",
+              "camera": "HIGH",
+              "move": "STATIC",
+              "expr": "EXP_GRIEF_M",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "我妈的东西。",
+              "sub": "我妈的东西。",
+              "sfx": "—",
+              "bgm_layer": "STRINGS",
+              "bgm_cue": "进",
+              "ambience": "雨声渐大",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": false
+            },
+            {
+              "shot": 4,
+              "bar_start": 7,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "MS",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_CONTEMPT_M",
+              "expr_int": 2,
+              "chars": [
+                "C_VILLAIN"
+              ],
+              "outfit": "OUTFIT_V",
+              "line": "你妈？",
+              "sub": "你妈？",
+              "sfx": "—",
+              "bgm_layer": "STRINGS",
+              "bgm_cue": "进",
+              "ambience": "雨声渐大",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": true
+            }
+          ]
+        },
+        {
+          "block": 4,
+          "bar_start": 1,
+          "bar_len": 8,
+          "sec": 15.0,
+          "phase": "顶点前·憋",
+          "emotion_arc": "EXP_GRIEF_H → EXP_ANGER_M",
+          "bgm_intent": {
+            "layers": [
+              "PAD",
+              "LOOP"
+            ],
+            "cue": "KICK_OUT"
+          },
+          "sfx_points": [
+            "心跳"
+          ],
+          "soft_hook": "「你再说一遍」",
+          "scene": "SCN_ROOM_DUSK",
+          "shots": [
+            {
+              "shot": 1,
+              "bar_start": 1,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "CU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_GRIEF_H",
+              "expr_int": 3,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "—",
+              "sub": "—",
+              "sfx": "心跳",
+              "bgm_layer": "LOOP",
+              "bgm_cue": "KICK_OUT",
+              "ambience": "雨停",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": true
+            },
+            {
+              "shot": 2,
+              "bar_start": 3,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "ECU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_GRIEF_H",
+              "expr_int": 3,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "你再说一遍。",
+              "sub": "你再说一遍。",
+              "sfx": "—",
+              "bgm_layer": "LOOP",
+              "bgm_cue": "进",
+              "ambience": "雨停",
+              "product": "无",
+              "level": "无",
+              "model_tag": "HERO",
+              "chain_break": false
+            },
+            {
+              "shot": 3,
+              "bar_start": 5,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "MS",
+              "camera": "OTS",
+              "move": "STATIC",
+              "expr": "EXP_CONTEMPT_M",
+              "expr_int": 2,
+              "chars": [
+                "C_VILLAIN"
+              ],
+              "outfit": "OUTFIT_V",
+              "line": "我说，你妈欠的，你还不清。",
+              "sub": "我说，你妈欠的，你还不清。",
+              "sfx": "—",
+              "bgm_layer": "LOOP",
+              "bgm_cue": "进",
+              "ambience": "雨停",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": false
+            },
+            {
+              "shot": 4,
+              "bar_start": 7,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "ECU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_ANGER_M",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_A",
+              "line": "—",
+              "sub": "—",
+              "sfx": "—",
+              "bgm_layer": "LOOP",
+              "bgm_cue": "进",
+              "ambience": "雨停",
+              "product": "ITEM_WATCH",
+              "level": "无",
+              "model_tag": "HAND",
+              "chain_break": false
+            }
+          ]
+        },
+        {
+          "block": 5,
+          "bar_start": 1,
+          "bar_len": 8,
+          "sec": 15.0,
+          "phase": "反转·爆",
+          "emotion_arc": "EXP_RESOLVE_M → EXP_SHOCK_M",
+          "bgm_intent": {
+            "layers": [
+              "PAD",
+              "LOOP",
+              "STRINGS",
+              "HIT"
+            ],
+            "cue": "BEAT_DROP@1"
+          },
+          "sfx_points": [
+            "低频砸击"
+          ],
+          "soft_hook": "「股东名册」",
+          "scene": "SCN_ROOM_DUSK",
+          "shots": [
+            {
+              "shot": 1,
+              "bar_start": 1,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "CU",
+              "camera": "EYE",
+              "move": "PUSH_S",
+              "expr": "EXP_RESOLVE_M",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_B",
+              "line": "欠的，我今天还。",
+              "sub": "欠的，我今天还。",
+              "sfx": "低频砸击",
+              "bgm_layer": "HIT",
+              "bgm_cue": "BEAT_DROP@1",
+              "ambience": "寂静",
+              "product": "无",
+              "level": "无",
+              "model_tag": "HERO",
+              "chain_break": true
+            },
+            {
+              "shot": 2,
+              "bar_start": 3,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "ECU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_SHOCK_M",
+              "expr_int": 2,
+              "chars": [
+                "C_VILLAIN"
+              ],
+              "outfit": "OUTFIT_V",
+              "line": "—",
+              "sub": "—",
+              "sfx": "—",
+              "bgm_layer": "STRINGS",
+              "bgm_cue": "进",
+              "ambience": "寂静",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": false
+            },
+            {
+              "shot": 3,
+              "bar_start": 5,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "ECU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_RESOLVE_M",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_B",
+              "line": "—",
+              "sub": "—",
+              "sfx": "纸质翻页",
+              "bgm_layer": "STRINGS",
+              "bgm_cue": "进",
+              "ambience": "寂静",
+              "product": "P_MAIN",
+              "level": "L3",
+              "model_tag": "PROD",
+              "chain_break": false
+            },
+            {
+              "shot": 4,
+              "bar_start": 7,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "MS",
+              "camera": "LOW",
+              "move": "STATIC",
+              "expr": "EXP_RESOLVE_H",
+              "expr_int": 3,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_B",
+              "line": "股东名册，第三页。",
+              "sub": "股东名册，第三页。",
+              "sfx": "—",
+              "bgm_layer": "STRINGS",
+              "bgm_cue": "进",
+              "ambience": "寂静",
+              "product": "无",
+              "level": "无",
+              "model_tag": "HERO",
+              "chain_break": false
+            }
+          ]
+        },
+        {
+          "block": 6,
+          "bar_start": 1,
+          "bar_len": 8,
+          "sec": 15.0,
+          "phase": "断点·悬",
+          "emotion_arc": "EXP_SHOCK_H → EXP_RESOLVE_M",
+          "bgm_intent": {
+            "layers": [
+              "PAD",
+              "HIT"
+            ],
+            "cue": "LOOP_OUT"
+          },
+          "sfx_points": [
+            "心跳",
+            "whoosh"
+          ],
+          "soft_hook": "断在此",
+          "scene": "SCN_ROOM_DUSK",
+          "shots": [
+            {
+              "shot": 1,
+              "bar_start": 1,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "CU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_SHOCK_H",
+              "expr_int": 3,
+              "chars": [
+                "C_VILLAIN"
+              ],
+              "outfit": "OUTFIT_V",
+              "line": "不可能。",
+              "sub": "不可能。",
+              "sfx": "心跳",
+              "bgm_layer": "PAD",
+              "bgm_cue": "LOOP_OUT",
+              "ambience": "雨声回归",
+              "product": "无",
+              "level": "无",
+              "model_tag": "FACE",
+              "chain_break": true
+            },
+            {
+              "shot": 2,
+              "bar_start": 3,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "ECU",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_SHOCK_H",
+              "expr_int": 3,
+              "chars": [
+                "C_VILLAIN"
+              ],
+              "outfit": "OUTFIT_V",
+              "line": "—",
+              "sub": "—",
+              "sfx": "—",
+              "bgm_layer": "PAD",
+              "bgm_cue": "进",
+              "ambience": "雨声回归",
+              "product": "无",
+              "level": "无",
+              "model_tag": "HAND",
+              "chain_break": false
+            },
+            {
+              "shot": 3,
+              "bar_start": 5,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "CU",
+              "camera": "EYE",
+              "move": "PULL_S",
+              "expr": "EXP_CONTEMPT_L",
+              "expr_int": 1,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_B",
+              "line": "—",
+              "sub": "—",
+              "sfx": "—",
+              "bgm_layer": "PAD",
+              "bgm_cue": "进",
+              "ambience": "雨声回归",
+              "product": "无",
+              "level": "无",
+              "model_tag": "HERO",
+              "chain_break": false
+            },
+            {
+              "shot": 4,
+              "bar_start": 7,
+              "dur_bar": 2,
+              "dur_sec": 3.75,
+              "size": "MS",
+              "camera": "EYE",
+              "move": "STATIC",
+              "expr": "EXP_RESOLVE_M",
+              "expr_int": 2,
+              "chars": [
+                "C_LEAD"
+              ],
+              "outfit": "OUTFIT_B",
+              "line": "明天，你搬出去。",
+              "sub": "明天，你搬出去。",
+              "sfx": "whoosh",
+              "bgm_layer": "HIT",
+              "bgm_cue": "HIT",
+              "ambience": "雨声回归",
+              "product": "无",
+              "level": "无",
+              "model_tag": "HERO",
+              "chain_break": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
