@@ -1,174 +1,222 @@
 ﻿ep,block,shot,bar_start,bar_len,dur_bar,dur_sec,time_in_block,frame_in,frame_out,shot_size,camera,move,expr_code,expr_int,char_ids,outfit,product,level,model_tag,img_tries,vid_tries,chain_break,line,sub_text,voice_emotion,sfx,bgm_layer,bgm_cue,ambience,first_frame_prompt,last_frame_prompt,video_prompt,negative,lock_id_used,style_id,style_overlays,style_prompt,style_prompt_en
-1,1,1,1,2,2,3.750,0.000,EP01/B01_SH01_IN.png,EP01/B01_SH01_OUT.png,ECU,EYE,STATIC,EXP_GRIEF_M,1,C_LEAD,OUTFIT_A,无,无,FACE,4,3,false,—,—,EXP_GRIEF_M,雨声底噪,PAD,进,雨夜环境,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+1,1,1,1,2,2,3.750,0.000,EP01/B01_SH01_IN.png,EP01/B01_SH01_OUT.png,ECU,EYE,STATIC,EXP_GRIEF_M,1,C_LEAD,OUTFIT_A,无,无,FACE,4,3,false,—,—,EXP_GRIEF_M,雨声底噪,PAD,进,雨夜环境,"大特写镜头，只拍眼睛与口鼻局部，脸部占满画面，不拍肩膀以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 大特写镜头，平视机位，
 内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 狭窄老旧巷子，两侧老式米白瓷砖墙与生锈空调外机，地面积水反光，残缺品红霓虹招牌横挂在左上方，顶灯冷白从上方直下，右侧品红反光，青蓝主调加品红点缀，夜雨，空气有雨雾，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤」，其余锁定词与环境光线一字不改）,他保持这个表情，几乎没有动作，只有眼睫轻颤，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,1,2,3,2,2,3.750,3.750,EP01/B01_SH02_IN.png,EP01/B01_SH02_OUT.png,CU,EYE,PUSH_S,EXP_GRIEF_M,2,C_LEAD,OUTFIT_A,无,无,FACE,4,3,false,最后一单。,最后一单。,EXP_GRIEF_M,雨声,PAD,进,雨夜环境,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含面部局部，无身体，无环境主体，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤」，其余锁定词与环境光线一字不改）,他保持这个表情，几乎没有动作，只有眼睫轻颤，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 半身, 全身, 远景, 环境为主, 露肩, 露腿, 站姿全身",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,1,2,3,2,2,3.750,3.750,EP01/B01_SH02_IN.png,EP01/B01_SH02_OUT.png,CU,EYE,PUSH_S,EXP_GRIEF_M,2,C_LEAD,OUTFIT_A,无,无,FACE,4,3,false,最后一单。,最后一单。,EXP_GRIEF_M,雨声,PAD,进,雨夜环境,"特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 特写镜头，平视机位，
 内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 狭窄老旧巷子，两侧老式米白瓷砖墙与生锈空调外机，地面积水反光，残缺品红霓虹招牌横挂在左上方，顶灯冷白从上方直下，右侧品红反光，青蓝主调加品红点缀，夜雨，空气有雨雾，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头极缓慢推近，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,1,3,5,2,3,5.625,7.500,EP01/B01_SH03_IN.png,EP01/B01_SH03_OUT.png,MS,LOW,STATIC,EXP_RESOLVE_M,2,C_LEAD,OUTFIT_A,无,无,REACT,3,2,false,—,—,EXP_RESOLVE_M,雨声,PAD,进,雨夜环境,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含头部与肩部，不出现全身，不出现腿部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头极缓慢推近，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 站姿全身, 远景, 大半身, 露腿, 环境为主, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,1,3,5,2,2,3.750,7.500,EP01/B01_SH03_IN.png,EP01/B01_SH03_OUT.png,MS,LOW,STATIC,EXP_RESOLVE_M,2,C_LEAD,OUTFIT_A,无,无,REACT,3,2,false,—,—,EXP_RESOLVE_M,雨声,PAD,进,雨夜环境,"中景镜头，从腰部以上取景，人物占画面三分之二，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 中景镜头，低机位仰拍，
 眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 狭窄老旧巷子，两侧老式米白瓷砖墙与生锈空调外机，地面积水反光，残缺品红霓虹招牌横挂在左上方，顶灯冷白从上方直下，右侧品红反光，青蓝主调加品红点缀，夜雨，空气有雨雾，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,1,4,8,2,1,1.875,13.125,EP01/B01_SH04_IN.png,EP01/B01_SH04_OUT.png,CU,OTS,STATIC,EXP_SHOCK_M,2,C_LEAD,OUTFIT_A,无,无,FACE,4,3,false,你找谁。,你找谁。,EXP_SHOCK_M,门开声,PAD,进,雨夜环境,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面取到腰部，不拍脚部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 远景, 只有头部, 大特写",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,1,4,7,2,2,3.750,11.250,EP01/B01_SH04_IN.png,EP01/B01_SH04_OUT.png,CU,OTS,STATIC,EXP_SHOCK_M,2,C_LEAD,OUTFIT_A,无,无,FACE,4,3,false,你找谁。,你找谁。,EXP_SHOCK_M,门开声,PAD,进,雨夜环境,"特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 特写镜头，过肩镜头，前景肩部虚化，焦点在对方脸上，
 双眉高抬，眼睛明显睁圆，瞳孔收缩，嘴唇张开成小圆形，下巴微坠，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 狭窄老旧巷子，两侧老式米白瓷砖墙与生锈空调外机，地面积水反光，残缺品红霓虹招牌横挂在左上方，顶灯冷白从上方直下，右侧品红反光，青蓝主调加品红点缀，夜雨，空气有雨雾，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「双眉高抬，眼睛明显睁圆，瞳孔收缩，嘴唇张开成小圆形，下巴微坠」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,2,1,1,2,2,3.750,0.000,EP01/B02_SH01_IN.png,EP01/B02_SH01_OUT.png,CU,PROFILE,STATIC,EXP_CONTEMPT_M,2,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,true,站着干什么。,站着干什么。,EXP_CONTEMPT_M,—,LOOP,LOOP_IN,楼道回声,"46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
+构图限制：画面仅含头部与肩部，不出现全身，不出现腿部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「双眉高抬，眼睛明显睁圆，瞳孔收缩，嘴唇张开成小圆形，下巴微坠」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 站姿全身, 远景, 大半身, 露腿, 环境为主, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,2,1,1,2,2,3.750,0.000,EP01/B02_SH01_IN.png,EP01/B02_SH01_OUT.png,CU,PROFILE,STATIC,EXP_CONTEMPT_M,2,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,true,站着干什么。,站着干什么。,EXP_CONTEMPT_M,—,LOOP,LOOP_IN,楼道回声,"特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下，
+46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
 特写镜头，四分之三侧脸，
 单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高，
 身穿深紫丝绒外套，黑色高领毛衣，黑色长裤，
 狭窄老旧巷子，两侧老式米白瓷砖墙与生锈空调外机，地面积水反光，残缺品红霓虹招牌横挂在左上方，顶灯冷白从上方直下，右侧品红反光，青蓝主调加品红点缀，夜雨，空气有雨雾，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,2,2,3,2,2,3.750,3.750,EP01/B02_SH02_IN.png,EP01/B02_SH02_OUT.png,ECU,EYE,STATIC,EXP_ANGER_L,1,C_LEAD,OUTFIT_A,ITEM_WATCH,无,HAND,3,2,false,—,—,EXP_ANGER_L,—,LOOP,进,楼道回声,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含头部与肩部，不出现全身，不出现腿部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 站姿全身, 远景, 大半身, 露腿, 环境为主, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,2,2,3,2,2,3.750,3.750,EP01/B02_SH02_IN.png,EP01/B02_SH02_OUT.png,ECU,EYE,STATIC,EXP_ANGER_L,1,C_LEAD,OUTFIT_A,ITEM_WATCH,无,HAND,3,2,false,—,—,EXP_ANGER_L,—,LOOP,进,楼道回声,"大特写镜头，只拍眼睛与口鼻局部，脸部占满画面，不拍肩膀以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 大特写镜头，平视机位，
 眉心微微下压，目光平直不移，嘴唇自然闭合并轻微收紧，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 狭窄老旧巷子，两侧老式米白瓷砖墙与生锈空调外机，地面积水反光，残缺品红霓虹招牌横挂在左上方，顶灯冷白从上方直下，右侧品红反光，青蓝主调加品红点缀，夜雨，空气有雨雾，
 画面中的旧钢带手表，表盘泛黄有划痕，表带为多节钢链，直径约36mm，银色，作为视觉焦点，材质与磨损细节清晰，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心微微下压，目光平直不移，嘴唇自然闭合并轻微收紧」，其余锁定词与环境光线一字不改）,他保持这个表情，几乎没有动作，只有眼睫轻颤，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,2,3,5,2,2,3.750,7.500,EP01/B02_SH03_IN.png,EP01/B02_SH03_OUT.png,MS,OTS,STATIC,EXP_CONTEMPT_M,2,C_VILLAIN|C_LEAD,OUTFIT_V,无,无,REACT,3,2,false,东西放下，走。,东西放下，走。,EXP_CONTEMPT_M,—,LOOP,进,楼道回声,"46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
+构图限制：画面仅含面部局部，无身体，无环境主体，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心微微下压，目光平直不移，嘴唇自然闭合并轻微收紧」，其余锁定词与环境光线一字不改）,他保持这个表情，几乎没有动作，只有眼睫轻颤，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 半身, 全身, 远景, 环境为主, 露肩, 露腿, 站姿全身",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,2,3,5,2,2,3.750,7.500,EP01/B02_SH03_IN.png,EP01/B02_SH03_OUT.png,MS,OTS,STATIC,EXP_CONTEMPT_M,2,C_VILLAIN|C_LEAD,OUTFIT_V,无,无,REACT,3,2,false,东西放下，走。,东西放下，走。,EXP_CONTEMPT_M,—,LOOP,进,楼道回声,"中景镜头，从腰部以上取景，人物占画面三分之二，
+46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
 中景镜头，过肩镜头，前景肩部虚化，焦点在对方脸上，
 单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高，
 身穿深紫丝绒外套，黑色高领毛衣，黑色长裤，
 狭窄老旧巷子，两侧老式米白瓷砖墙与生锈空调外机，地面积水反光，残缺品红霓虹招牌横挂在左上方，顶灯冷白从上方直下，右侧品红反光，青蓝主调加品红点缀，夜雨，空气有雨雾，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,2,4,7,2,2,3.750,11.250,EP01/B02_SH04_IN.png,EP01/B02_SH04_OUT.png,CU,EYE,STATIC,EXP_ANGER_L,2,C_LEAD,OUTFIT_A,ITEM_WATCH,无,HAND,3,2,false,—,—,EXP_ANGER_L,—,LOOP,进,楼道回声,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面取到腰部，不拍脚部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 远景, 只有头部, 大特写, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,2,4,7,2,2,3.750,11.250,EP01/B02_SH04_IN.png,EP01/B02_SH04_OUT.png,CU,EYE,STATIC,EXP_ANGER_L,2,C_LEAD,OUTFIT_A,ITEM_WATCH,无,HAND,3,2,false,—,—,EXP_ANGER_L,—,LOOP,进,楼道回声,"特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 特写镜头，平视机位，
 眉心微微下压，目光平直不移，嘴唇自然闭合并轻微收紧，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 狭窄老旧巷子，两侧老式米白瓷砖墙与生锈空调外机，地面积水反光，残缺品红霓虹招牌横挂在左上方，顶灯冷白从上方直下，右侧品红反光，青蓝主调加品红点缀，夜雨，空气有雨雾，
 画面中的旧钢带手表，表盘泛黄有划痕，表带为多节钢链，直径约36mm，银色，作为视觉焦点，材质与磨损细节清晰，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心微微下压，目光平直不移，嘴唇自然闭合并轻微收紧」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,3,1,1,2,2,3.750,0.000,EP01/B03_SH01_IN.png,EP01/B03_SH01_OUT.png,MS,LOW,STATIC,EXP_CONTEMPT_H,3,C_VILLAIN,OUTFIT_V,无,无,HERO,6,6,true,这块表，早该熔了。,这块表，早该熔了。,EXP_CONTEMPT_H,雷声,STRINGS,BEAT@3,雨声渐大,"46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
+构图限制：画面仅含头部与肩部，不出现全身，不出现腿部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心微微下压，目光平直不移，嘴唇自然闭合并轻微收紧」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，雨水从发梢滴落，衣角被风带动，地面积水有细微涟漪，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 站姿全身, 远景, 大半身, 露腿, 环境为主",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,3,1,1,2,2,3.750,0.000,EP01/B03_SH01_IN.png,EP01/B03_SH01_OUT.png,MS,LOW,STATIC,EXP_CONTEMPT_H,3,C_VILLAIN,OUTFIT_V,无,无,HERO,6,6,true,这块表，早该熔了。,这块表，早该熔了。,EXP_CONTEMPT_H,雷声,STRINGS,BEAT@3,雨声渐大,"中景镜头，从腰部以上取景，人物占画面三分之二，
+46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
 中景镜头，低机位仰拍，
 整张脸向上皱起，单侧露齿，眼皮半垂，鼻孔对人，头向后仰，
 身穿深紫丝绒外套，黑色高领毛衣，黑色长裤，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「整张脸向上皱起，单侧露齿，眼皮半垂，鼻孔对人，头向后仰」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,3,2,3,2,2,3.750,3.750,EP01/B03_SH02_IN.png,EP01/B03_SH02_OUT.png,ECU,EYE,STATIC,EXP_GRIEF_M,2,C_LEAD,OUTFIT_A,ITEM_WATCH,无,HAND,3,2,false,—,—,EXP_GRIEF_M,—,STRINGS,进,雨声渐大,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面取到腰部，不拍脚部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「整张脸向上皱起，单侧露齿，眼皮半垂，鼻孔对人，头向后仰」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 远景, 只有头部, 大特写, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,3,2,3,2,2,3.750,3.750,EP01/B03_SH02_IN.png,EP01/B03_SH02_OUT.png,ECU,EYE,STATIC,EXP_GRIEF_M,2,C_LEAD,OUTFIT_A,ITEM_WATCH,无,HAND,3,2,false,—,—,EXP_GRIEF_M,—,STRINGS,进,雨声渐大,"大特写镜头，只拍眼睛与口鼻局部，脸部占满画面，不拍肩膀以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 大特写镜头，平视机位，
 内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 画面中的旧钢带手表，表盘泛黄有划痕，表带为多节钢链，直径约36mm，银色，作为视觉焦点，材质与磨损细节清晰，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,3,3,5,2,2,3.750,7.500,EP01/B03_SH03_IN.png,EP01/B03_SH03_OUT.png,CU,HIGH,STATIC,EXP_GRIEF_M,2,C_LEAD,OUTFIT_A,无,无,FACE,4,3,false,我妈的东西。,我妈的东西。,EXP_GRIEF_M,—,STRINGS,进,雨声渐大,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含面部局部，无身体，无环境主体，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 半身, 全身, 远景, 环境为主, 露肩, 露腿, 站姿全身",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,3,3,5,2,2,3.750,7.500,EP01/B03_SH03_IN.png,EP01/B03_SH03_OUT.png,CU,HIGH,STATIC,EXP_GRIEF_M,2,C_LEAD,OUTFIT_A,无,无,FACE,4,3,false,我妈的东西。,我妈的东西。,EXP_GRIEF_M,—,STRINGS,进,雨声渐大,"特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 特写镜头，高机位俯拍，
 内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,3,4,7,2,2,3.750,11.250,EP01/B03_SH04_IN.png,EP01/B03_SH04_OUT.png,MS,EYE,STATIC,EXP_CONTEMPT_M,2,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,true,你妈？,你妈？,EXP_CONTEMPT_M,—,STRINGS,进,雨声渐大,"46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
+构图限制：画面仅含头部与肩部，不出现全身，不出现腿部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「内眉头上抬成八字，下眼睑下方饱满有水光，鼻头微红，下唇微颤」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 站姿全身, 远景, 大半身, 露腿, 环境为主, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,3,4,7,2,2,3.750,11.250,EP01/B03_SH04_IN.png,EP01/B03_SH04_OUT.png,MS,EYE,STATIC,EXP_CONTEMPT_M,2,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,true,你妈？,你妈？,EXP_CONTEMPT_M,—,STRINGS,进,雨声渐大,"中景镜头，从腰部以上取景，人物占画面三分之二，
+46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
 中景镜头，平视机位，
 单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高，
 身穿深紫丝绒外套，黑色高领毛衣，黑色长裤，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,4,1,1,2,2,3.750,0.000,EP01/B04_SH01_IN.png,EP01/B04_SH01_OUT.png,CU,EYE,STATIC,EXP_GRIEF_H,3,C_LEAD,OUTFIT_A,无,无,FACE,4,3,true,—,—,EXP_GRIEF_H,心跳,LOOP,KICK_OUT,雨停,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面取到腰部，不拍脚部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 远景, 只有头部, 大特写, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,4,1,1,2,2,3.750,0.000,EP01/B04_SH01_IN.png,EP01/B04_SH01_OUT.png,CU,EYE,STATIC,EXP_GRIEF_H,3,C_LEAD,OUTFIT_A,无,无,FACE,4,3,true,—,—,EXP_GRIEF_H,心跳,LOOP,KICK_OUT,雨停,"特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 特写镜头，平视机位，
 眉心紧皱成川，双眼泛红含泪未落，面颊绷起，嘴唇抖开露出齿关，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心紧皱成川，双眼泛红含泪未落，面颊绷起，嘴唇抖开露出齿关」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,4,2,3,2,2,3.750,3.750,EP01/B04_SH02_IN.png,EP01/B04_SH02_OUT.png,ECU,EYE,STATIC,EXP_GRIEF_H,3,C_LEAD,OUTFIT_A,无,无,HERO,6,6,false,你再说一遍。,你再说一遍。,EXP_GRIEF_H,—,LOOP,进,雨停,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含头部与肩部，不出现全身，不出现腿部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心紧皱成川，双眼泛红含泪未落，面颊绷起，嘴唇抖开露出齿关」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 站姿全身, 远景, 大半身, 露腿, 环境为主",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,4,2,3,2,2,3.750,3.750,EP01/B04_SH02_IN.png,EP01/B04_SH02_OUT.png,ECU,EYE,STATIC,EXP_GRIEF_H,3,C_LEAD,OUTFIT_A,无,无,HERO,6,6,false,你再说一遍。,你再说一遍。,EXP_GRIEF_H,—,LOOP,进,雨停,"大特写镜头，只拍眼睛与口鼻局部，脸部占满画面，不拍肩膀以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 大特写镜头，平视机位，
 眉心紧皱成川，双眼泛红含泪未落，面颊绷起，嘴唇抖开露出齿关，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心紧皱成川，双眼泛红含泪未落，面颊绷起，嘴唇抖开露出齿关」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,4,3,5,2,2,3.750,7.500,EP01/B04_SH03_IN.png,EP01/B04_SH03_OUT.png,MS,OTS,STATIC,EXP_CONTEMPT_M,2,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,false,我说，你妈欠的，你还不清。,我说，你妈欠的，你还不清。,EXP_CONTEMPT_M,—,LOOP,进,雨停,"46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
+构图限制：画面仅含面部局部，无身体，无环境主体，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心紧皱成川，双眼泛红含泪未落，面颊绷起，嘴唇抖开露出齿关」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 半身, 全身, 远景, 环境为主, 露肩, 露腿, 站姿全身, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,4,3,5,2,2,3.750,7.500,EP01/B04_SH03_IN.png,EP01/B04_SH03_OUT.png,MS,OTS,STATIC,EXP_CONTEMPT_M,2,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,false,我说，你妈欠的，你还不清。,我说，你妈欠的，你还不清。,EXP_CONTEMPT_M,—,LOOP,进,雨停,"中景镜头，从腰部以上取景，人物占画面三分之二，
+46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
 中景镜头，过肩镜头，前景肩部虚化，焦点在对方脸上，
 单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高，
 身穿深紫丝绒外套，黑色高领毛衣，黑色长裤，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,4,4,7,2,2,3.750,11.250,EP01/B04_SH04_IN.png,EP01/B04_SH04_OUT.png,ECU,EYE,STATIC,EXP_ANGER_M,2,C_LEAD,OUTFIT_A,ITEM_WATCH,无,HAND,3,2,false,—,—,EXP_ANGER_M,—,LOOP,进,雨停,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面取到腰部，不拍脚部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧鼻翼上提，单侧嘴角拉高，眼睛半阖自上而下看人，下巴抬高」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 远景, 只有头部, 大特写, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,4,4,7,2,2,3.750,11.250,EP01/B04_SH04_IN.png,EP01/B04_SH04_OUT.png,ECU,EYE,STATIC,EXP_ANGER_M,2,C_LEAD,OUTFIT_A,ITEM_WATCH,无,HAND,3,2,false,—,—,EXP_ANGER_M,—,LOOP,进,雨停,"大特写镜头，只拍眼睛与口鼻局部，脸部占满画面，不拍肩膀以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 大特写镜头，平视机位，
 眉心明显下压形成竖纹，上眼睑抬高露出更多眼白，鼻翼微张，下颌绷紧，下唇前推，
 身穿深灰工装夹克，洗旧黑T恤，黑工装裤，旧帆布鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 画面中的旧钢带手表，表盘泛黄有划痕，表带为多节钢链，直径约36mm，银色，作为视觉焦点，材质与磨损细节清晰，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心明显下压形成竖纹，上眼睑抬高露出更多眼白，鼻翼微张，下颌绷紧，下唇前推」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,5,1,1,2,2,3.750,0.000,EP01/B05_SH01_IN.png,EP01/B05_SH01_OUT.png,CU,EYE,PUSH_S,EXP_RESOLVE_M,2,C_LEAD,OUTFIT_B,无,无,HERO,6,6,true,欠的，我今天还。,欠的，我今天还。,EXP_RESOLVE_M,低频砸击,HIT,BEAT_DROP@1,寂静,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含面部局部，无身体，无环境主体，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眉心明显下压形成竖纹，上眼睑抬高露出更多眼白，鼻翼微张，下颌绷紧，下唇前推」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 半身, 全身, 远景, 环境为主, 露肩, 露腿, 站姿全身",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,5,1,1,2,2,3.750,0.000,EP01/B05_SH01_IN.png,EP01/B05_SH01_OUT.png,CU,EYE,PUSH_S,EXP_RESOLVE_M,2,C_LEAD,OUTFIT_B,无,无,HERO,6,6,true,欠的，我今天还。,欠的，我今天还。,EXP_RESOLVE_M,低频砸击,HIT,BEAT_DROP@1,寂静,"特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 特写镜头，平视机位，
 眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直，
 身穿黑色衬衫袖口卷两折，深灰西裤，黑色皮鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头极缓慢推近，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,5,2,3,2,2,3.750,3.750,EP01/B05_SH02_IN.png,EP01/B05_SH02_OUT.png,ECU,EYE,STATIC,EXP_SHOCK_M,2,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,false,—,—,EXP_SHOCK_M,—,STRINGS,进,寂静,"46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
+构图限制：画面仅含头部与肩部，不出现全身，不出现腿部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头极缓慢推近，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 站姿全身, 远景, 大半身, 露腿, 环境为主, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,5,2,3,2,2,3.750,3.750,EP01/B05_SH02_IN.png,EP01/B05_SH02_OUT.png,ECU,EYE,STATIC,EXP_SHOCK_M,2,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,false,—,—,EXP_SHOCK_M,—,STRINGS,进,寂静,"大特写镜头，只拍眼睛与口鼻局部，脸部占满画面，不拍肩膀以下，
+46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
 大特写镜头，平视机位，
 双眉高抬，眼睛明显睁圆，瞳孔收缩，嘴唇张开成小圆形，下巴微坠，
 身穿深紫丝绒外套，黑色高领毛衣，黑色长裤，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「双眉高抬，眼睛明显睁圆，瞳孔收缩，嘴唇张开成小圆形，下巴微坠」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,5,3,5,2,2,3.750,7.500,EP01/B05_SH03_IN.png,EP01/B05_SH03_OUT.png,ECU,EYE,STATIC,EXP_RESOLVE_M,2,C_LEAD,OUTFIT_B,P_MAIN,L3,PROD,4,3,false,—,—,EXP_RESOLVE_M,纸质翻页,STRINGS,进,寂静,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含面部局部，无身体，无环境主体，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「双眉高抬，眼睛明显睁圆，瞳孔收缩，嘴唇张开成小圆形，下巴微坠」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 半身, 全身, 远景, 环境为主, 露肩, 露腿, 站姿全身",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,5,3,5,2,2,3.750,7.500,EP01/B05_SH03_IN.png,EP01/B05_SH03_OUT.png,ECU,EYE,STATIC,EXP_RESOLVE_M,2,C_LEAD,OUTFIT_B,P_MAIN,L3,PROD,4,3,false,—,—,EXP_RESOLVE_M,纸质翻页,STRINGS,进,寂静,"大特写镜头，只拍眼睛与口鼻局部，脸部占满画面，不拍肩膀以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 大特写镜头，平视机位，
 眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直，
 身穿黑色衬衫袖口卷两折，深灰西裤，黑色皮鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 画面中的透明磨砂玻璃瓶，圆柱瓶身，银色按压泵头，白色标签印黑字，容量30ml，瓶身侧对镜头半露，标签文字清晰可读，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,5,4,7,2,2,3.750,11.250,EP01/B05_SH04_IN.png,EP01/B05_SH04_OUT.png,MS,LOW,STATIC,EXP_RESOLVE_H,3,C_LEAD,OUTFIT_B,无,无,HERO,6,6,false,股东名册，第三页。,股东名册，第三页。,EXP_RESOLVE_H,—,STRINGS,进,寂静,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含面部局部，无身体，无环境主体，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 半身, 全身, 远景, 环境为主, 露肩, 露腿, 站姿全身",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,5,4,7,2,2,3.750,11.250,EP01/B05_SH04_IN.png,EP01/B05_SH04_OUT.png,MS,LOW,STATIC,EXP_RESOLVE_H,3,C_LEAD,OUTFIT_B,无,无,HERO,6,6,false,股东名册，第三页。,股东名册，第三页。,EXP_RESOLVE_H,—,STRINGS,进,寂静,"中景镜头，从腰部以上取景，人物占画面三分之二，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 中景镜头，低机位仰拍，
 眼睑压低成一条缝但精光外露，眉平直，下颌紧咬，呼吸可见，
 身穿黑色衬衫袖口卷两折，深灰西裤，黑色皮鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睑压低成一条缝但精光外露，眉平直，下颌紧咬，呼吸可见」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,6,1,1,2,2,3.750,0.000,EP01/B06_SH01_IN.png,EP01/B06_SH01_OUT.png,CU,EYE,STATIC,EXP_SHOCK_H,3,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,true,不可能。,不可能。,EXP_SHOCK_H,心跳,PAD,LOOP_OUT,雨声回归,"46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
+构图限制：画面取到腰部，不拍脚部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睑压低成一条缝但精光外露，眉平直，下颌紧咬，呼吸可见」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 远景, 只有头部, 大特写, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,6,1,1,2,2,3.750,0.000,EP01/B06_SH01_IN.png,EP01/B06_SH01_OUT.png,CU,EYE,STATIC,EXP_SHOCK_H,3,C_VILLAIN,OUTFIT_V,无,无,FACE,4,3,true,不可能。,不可能。,EXP_SHOCK_H,心跳,PAD,LOOP_OUT,雨声回归,"特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下，
+46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
 特写镜头，平视机位，
 双眉极致上抬，眼白大量露出，嘴唇大张，面部肌肉停滞，颈部后仰，
 身穿深紫丝绒外套，黑色高领毛衣，黑色长裤，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「双眉极致上抬，眼白大量露出，嘴唇大张，面部肌肉停滞，颈部后仰」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,6,2,3,2,2,3.750,3.750,EP01/B06_SH02_IN.png,EP01/B06_SH02_OUT.png,ECU,EYE,STATIC,EXP_SHOCK_H,3,C_VILLAIN,OUTFIT_V,无,无,HAND,3,2,false,—,—,EXP_SHOCK_H,—,PAD,进,雨声回归,"46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
+构图限制：画面仅含头部与肩部，不出现全身，不出现腿部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「双眉极致上抬，眼白大量露出，嘴唇大张，面部肌肉停滞，颈部后仰」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 站姿全身, 远景, 大半身, 露腿, 环境为主, 哭, 笑, 表情剧变",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,6,2,3,2,2,3.750,3.750,EP01/B06_SH02_IN.png,EP01/B06_SH02_OUT.png,ECU,EYE,STATIC,EXP_SHOCK_H,3,C_VILLAIN,OUTFIT_V,无,无,HAND,3,2,false,—,—,EXP_SHOCK_H,—,PAD,进,雨声回归,"大特写镜头，只拍眼睛与口鼻局部，脸部占满画面，不拍肩膀以下，
+46岁亚洲女性，鹅蛋脸，颧骨高，上挑细长眼，眉形锋利，薄唇，深棕色齐肩短卷发，肤色白皙，身高165体型清瘦，右耳戴一枚金色圆环耳饰，
 大特写镜头，平视机位，
 双眉极致上抬，眼白大量露出，嘴唇大张，面部肌肉停滞，颈部后仰，
 身穿深紫丝绒外套，黑色高领毛衣，黑色长裤，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「双眉极致上抬，眼白大量露出，嘴唇大张，面部肌肉停滞，颈部后仰」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,6,3,5,2,2,3.750,7.500,EP01/B06_SH03_IN.png,EP01/B06_SH03_OUT.png,CU,EYE,PULL_S,EXP_CONTEMPT_L,1,C_LEAD,OUTFIT_B,无,无,HERO,6,6,false,—,—,EXP_CONTEMPT_L,—,PAD,进,雨声回归,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含面部局部，无身体，无环境主体，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「双眉极致上抬，眼白大量露出，嘴唇大张，面部肌肉停滞，颈部后仰」，其余锁定词与环境光线一字不改）,他保持这个表情不动，眼睑快速眨了一下，喉结微微吞咽，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 半身, 全身, 远景, 环境为主, 露肩, 露腿, 站姿全身",C_VILLAIN,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,6,3,5,2,2,3.750,7.500,EP01/B06_SH03_IN.png,EP01/B06_SH03_OUT.png,CU,EYE,PULL_S,EXP_CONTEMPT_L,1,C_LEAD,OUTFIT_B,无,无,HERO,6,6,false,—,—,EXP_CONTEMPT_L,—,PAD,进,雨声回归,"特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 特写镜头，平视机位，
 单侧嘴角极轻上扬，视线从下往上扫，
 身穿黑色衬衫袖口卷两折，深灰西裤，黑色皮鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧嘴角极轻上扬，视线从下往上扫」，其余锁定词与环境光线一字不改）,他保持这个表情，几乎没有动作，只有眼睫轻颤，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头极缓慢拉远，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
-1,6,4,7,2,2,3.750,11.250,EP01/B06_SH04_IN.png,EP01/B06_SH04_OUT.png,MS,EYE,STATIC,EXP_RESOLVE_M,2,C_LEAD,OUTFIT_B,无,无,HERO,6,6,false,明天，你搬出去。,明天，你搬出去。,EXP_RESOLVE_M,whoosh,HIT,HIT,雨声回归,"28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
+构图限制：画面仅含头部与肩部，不出现全身，不出现腿部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「单侧嘴角极轻上扬，视线从下往上扫」，其余锁定词与环境光线一字不改）,他保持这个表情，几乎没有动作，只有眼睫轻颤，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头极缓慢拉远，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 站姿全身, 远景, 大半身, 露腿, 环境为主",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+1,6,4,7,2,2,3.750,11.250,EP01/B06_SH04_IN.png,EP01/B06_SH04_OUT.png,MS,EYE,STATIC,EXP_RESOLVE_M,2,C_LEAD,OUTFIT_B,无,无,HERO,6,6,false,明天，你搬出去。,明天，你搬出去。,EXP_RESOLVE_M,whoosh,HIT,HIT,雨声回归,"中景镜头，从腰部以上取景，人物占画面三分之二，
+28岁亚洲男性，窄长脸，颧骨清晰，内双细长眼，眉骨略高，薄唇，短寸黑发，肤色偏黄白，身高178体型偏瘦但肩宽，左手腕戴旧钢带手表，右眉尾有一道浅疤，
 中景镜头，平视机位，
 眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直，
 身穿黑色衬衫袖口卷两折，深灰西裤，黑色皮鞋，
 老式两居室客厅，米黄色墙面有水渍，木质旧家具，白炽灯偏暖，窗外夕阳橙红从右侧斜射，桌上有搪瓷缸与旧报纸，暖黄主调，薄尘，
 电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光，
-8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"
+构图限制：画面取到腰部，不拍脚部，
+8k, 竖构图9:16",（尾帧：在首帧基础上，表情改为「眼睛微眯，目光定点不移，下颌前送一点，脖颈拉直」，其余锁定词与环境光线一字不改）,他保持这个表情，幅度极小，呼吸让肩膀微微起伏，嘴唇随之开合说话，窗帘被气流带动轻晃，细微浮尘在光柱里飘动，镜头固定不动，3.75秒。,"变形, 多余手指, 脸部扭曲, 五官漂移, 双人融合, 文字水印, 字幕, logo, 塑料感皮肤, 过曝, 模糊, 低分辨率, 动漫风, 3D渲染, 卡通, 塑料感, 过锐, HDR 过曝, 插画感, 全身, 远景, 只有头部, 大特写, 哭, 笑, 表情剧变",C_LEAD,CINEMA_REAL,FILM_GRAIN|NEON_LIGHT,电影感画面，35mm 胶片质感，浅景深，电影级布光，高细节皮肤纹理，自然光影过渡，柔和对比，真实材质反射，明显胶片颗粒，轻微画面呼吸感，霓虹多色光源，品红青蓝交织，湿面反光,"cinematic film look, 35mm film texture, shallow depth of field, film-grade lighting, detailed skin texture, natural light falloff, soft contrast, realistic material reflections，visible film grain, subtle frame breathing，multi-color neon sources, magenta cyan blue interweaving, wet surface reflections"

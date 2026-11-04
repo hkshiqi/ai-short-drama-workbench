@@ -345,12 +345,13 @@ OVERLAYS: dict[str, dict] = {
                          en="Polaroid white border and color shift", use_for="插入定帧"),
 }
 
-# 题材 → 推荐风格
+# 题材 → 推荐风格（style_id, [修饰层]）
+# 注意：修饰层必须是 OVERLAYS 里存在的 key，不能填另一个主风格
 TOPIC_RECOMMEND = {
     "都市甜宠": ("ROMANCE_SOFT", ["GLOW_LIGHT"]),
     "逆袭打脸": ("DOUYIN_HIGH", ["CONTRAST_HIGH"]),
     "复仇爽剧": ("CINEMA_COLD", ["FILM_GRAIN"]),
-    "战神归来": ("CINEMA_REAL", ["ANAMORPHIC"]),
+    "战神归来": ("CINEMA_REAL", ["VIGNETTE"]),
     "重生90年代": ("RETRO_90S_CN", ["GRADE_WARM"]),
     "港风怀旧": ("RETRO_HK", ["FILM_GRAIN"]),
     "婆媳家庭": ("DOC_REAL", []),
@@ -361,9 +362,63 @@ TOPIC_RECOMMEND = {
     "赛博未来": ("CYBERPUNK", ["NEON_LIGHT"]),
     "战争年代": ("WAR_DESAT", ["FILM_GRAIN"]),
     "产品带货": ("TEAL_ORANGE", ["MACRO_TEXTURE"] if False else ["FILM_GRAIN"]),
+    "电影写实": ("CINEMA_REAL", ["FILM_GRAIN"]),
+    "怀旧叙事": ("RETRO_90S_CN", ["FILM_GRAIN", "WINDOW_LIGHT"]),
+    "港风复古": ("RETRO_HK", ["FILM_GRAIN", "NEON_LIGHT"]),
+    "竖屏爽剧": ("DOUYIN_HIGH", ["CONTRAST_HIGH"]),
 }
 
+
+def overlays_for(style_id: str) -> list[str]:
+    """按风格反查推荐的修饰层（用于风格对照图等场合）"""
+    for _topic, (rec, ols) in TOPIC_RECOMMEND.items():
+        if rec == style_id:
+            return list(ols)
+    return []
+
 MAX_OVERLAYS = 2
+
+# ============================================================
+# 景别强制约束（实测发现：风格词权重会压过景别词，导致出图景别错）
+# 用「前置强调 + 尾部构图限制 + 负向词」三重锁死
+# ============================================================
+SHOT_SIZE_ENFORCE = {
+    "ECU": dict(
+        lead="大特写镜头，只拍眼睛与口鼻局部，脸部占满画面，不拍肩膀以下",
+        tail="构图限制：画面仅含面部局部，无身体，无环境主体",
+        neg="半身, 全身, 远景, 环境为主, 露肩, 露腿, 站姿全身",
+    ),
+    "CU": dict(
+        lead="特写镜头，只拍头部与肩部，脸部占画面一半以上，不拍腰部以下",
+        tail="构图限制：画面仅含头部与肩部，不出现全身，不出现腿部",
+        neg="全身, 站姿全身, 远景, 大半身, 露腿, 环境为主",
+    ),
+    "MS": dict(
+        lead="中景镜头，从腰部以上取景，人物占画面三分之二",
+        tail="构图限制：画面取到腰部，不拍脚部",
+        neg="全身, 远景, 只有头部, 大特写",
+    ),
+    "MFS": dict(
+        lead="中全景镜头，从膝盖以上取景，人物与环境同时可见",
+        tail="构图限制：画面取到膝盖，环境占三分之一",
+        neg="大特写, 只有头部, 极远景",
+    ),
+    "FS": dict(
+        lead="全景镜头，人物全身入画，环境占画面一半",
+        tail="构图限制：完整全身，人物在画面中占三分之一高度",
+        neg="大特写, 只有头部, 半身",
+    ),
+    "ELS": dict(
+        lead="大全景镜头，环境为主，人物很小",
+        tail="构图限制：环境占绝对主体，人物小于画面十分之一",
+        neg="特写, 半身, 脸部占满",
+    ),
+}
+
+
+def enforce_shot_size(shot_size: str) -> dict:
+    """返回该景别的强制约束三件套"""
+    return SHOT_SIZE_ENFORCE.get(shot_size, SHOT_SIZE_ENFORCE["CU"])
 
 
 # ============================================================
@@ -385,6 +440,17 @@ def build_style_prompt(style_id: str, overlays: list[str] | None = None,
             raise KeyError(f"未知修饰层 {o}")
         parts.append(OVERLAYS[o]["cn"] if lang == "cn" else OVERLAYS[o]["en"])
     return "，".join(parts)
+
+
+def style_phrase_count(style_id: str, overlays: list[str] | None = None) -> int:
+    """风格词短语数量（用于判断是否要重复标志物）"""
+    sp = build_style_prompt(style_id, overlays)
+    return len([x for x in sp.split("，") if x.strip()])
+
+
+def needs_marker_echo(style_id: str, overlays: list[str] | None = None) -> bool:
+    """风格词超过 15 个短语时，锁定词里的标志物会被稀释 → 需要在结尾重复一遍"""
+    return style_phrase_count(style_id, overlays) > 15
 
 
 def build_negative(style_id: str, overlays: list[str] | None = None) -> str:

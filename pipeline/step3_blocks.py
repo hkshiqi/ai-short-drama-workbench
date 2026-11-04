@@ -86,12 +86,24 @@ def parse_table(text: str, col: int = 1) -> dict[str, str]:
 def build_first_frame(lock: str, size: str, camera: str, expr_desc: str,
                       chars: list[str], outfit_desc: str, scene_env: str,
                       product_desc: str | None, product_moment: str,
-                      style_prompt: str = "", suffix: str = QUALITY_SUFFIX_CN) -> str:
+                      style_prompt: str = "", suffix: str = QUALITY_SUFFIX_CN,
+                      marker: str = "", echo_marker: bool = False) -> str:
     """提示词拼装（顺序不可改）：
-    LOCK_V1 + 景别机位 + EXP表情 + 服装 + 场景环境光线 + ★STYLE★ + 画质后缀(去重)
+
+    [景别强制lead] + LOCK_V1 + 景别机位 + EXP表情 + 服装
+    + 场景环境光线 + ★STYLE★ + [构图限制tail] + [标志物回声] + 画质后缀
+
+    实测教训（风格对照 EP01_SH02）：
+      ① 风格词权重会压过景别词 → 景别必须前置强调 + 尾部构图限制 + 负向词三锁
+      ② 风格词过长会稀释标志物 → 超 15 短语时标志物在结尾单独回声一次
+      ③ 标志物已在锁定词里，不许在开头再写一遍（会变成重复稀释）
     """
+    from stylelib import enforce_shot_size
+    enf = enforce_shot_size(size)
+
     parts = [
-        lock,
+        enf["lead"],                                    # ① 景别前置强约束
+        lock,                                           # ② 外观锁定词（已含标志物）
         f"{SIZE_CN.get(size, size)}，{CAMERA_CN.get(camera, camera)}",
         expr_desc,
         f"身穿{outfit_desc}" if outfit_desc else "",
@@ -100,7 +112,10 @@ def build_first_frame(lock: str, size: str, camera: str, expr_desc: str,
     if product_desc:
         parts.append(f"画面中的{product_desc}，{product_moment}")
     if style_prompt:
-        parts.append(style_prompt)          # ★ 风格层：环境之后、画质之前
+        parts.append(style_prompt)                      # ③ 风格层
+    parts.append(enf["tail"])                           # ④ 构图限制（尾部再锁一次）
+    if echo_marker and marker:
+        parts.append(f"重要特征必须清晰可见：{marker}")   # ⑤ 标志物回声（仅尾部一次）
     parts.append(suffix)
     return "，\n".join(p for p in parts if p)
 
@@ -151,7 +166,8 @@ def run(slug: str = SLUG) -> Gate:
 
     # ---- 载入风格（第①步锁定）----
     from stylelib import (STYLES, build_negative as style_neg,
-                          build_style_prompt, quality_suffix, tier_of)
+                          build_style_prompt, quality_suffix, tier_of,
+                          needs_marker_echo, enforce_shot_size, style_phrase_count)
     style_spec = script["spec"].get("style") or {}
     style_id = style_spec.get("style_id", "")
     overlays = style_spec.get("overlays") or []
@@ -161,9 +177,19 @@ def run(slug: str = SLUG) -> Gate:
     style_negative = style_neg(style_id, overlays) if style_id else ""
     # 画质后缀：与风格层去重，避免同一形容词重复稀释权重
     quality_suffix_final = quality_suffix(style_id, overlays) if style_id else QUALITY_SUFFIX_CN
+    echo_marker = needs_marker_echo(style_id, overlays) if style_id else False
     g_style_tier = tier_of(style_id) if style_id else "?"
-    print(f"  风格：{style_id} [{g_style_tier}档] + {overlays}")
+    print(f"  风格：{style_id} [{g_style_tier}档] + {overlays}"
+          f"（{style_phrase_count(style_id, overlays)} 短语"
+          f"{'，标志物回声开启' if echo_marker else ''}）")
     print(f"  后缀（去重后）：{quality_suffix_final}")
+
+    # 角色标志物（用于标志物前置 + 回声）
+    MARKERS = {
+        "C_LEAD": "左手腕旧钢带手表，右眉尾一道浅疤",
+        "C_VILLAIN": "右耳金色圆环耳饰",
+        "C_ALLY": "颈间细银链",
+    }
 
     # ---- 索引 ----
     item_by_id = {i["id"]: i for i in script["items"]}
@@ -221,16 +247,20 @@ def run(slug: str = SLUG) -> Gate:
                 ff = build_first_frame(lock, s["size"], s["camera"], expr_desc,
                                       ch, outfit_desc, scene_env, prod_desc,
                                       prod_moment, style_prompt,
-                                      quality_suffix_final)
+                                      quality_suffix_final,
+                                      marker=MARKERS.get(primary, ""),
+                                      echo_marker=echo_marker)
                 vp = build_video_prompt(s["size"], s["move"], s["expr_int"],
                                         ch, dur_sec, has_line, b["scene"])
                 lf = build_last_frame_note(ff, expr_desc)
+                # 负向词：默认 + 风格 + 景别强约束 + 台词镜特化，最后整体去重
                 neg = NEGATIVE_DEFAULT
                 if style_negative:
                     neg += ", " + style_negative
+                neg += ", " + enforce_shot_size(s["size"])["neg"]
                 if has_line:
                     neg += ", 哭, 笑, 表情剧变"
-                neg = dedupe_csv(neg)      # 去重（风格负向与默认负向常有重叠）
+                neg = dedupe_csv(neg)
 
                 img_tries, vid_tries = MODEL_TAG_TRIES[s["model_tag"]]
 

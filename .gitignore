@@ -1,43 +1,48 @@
 # ============================================================
 # AI 短剧工作台 · .gitignore
-# 原则：代码与规范进版本库；生成物与密钥不进。
+# 原则：代码与规范进版本库；生成物、大文件、密钥不进。
 # ============================================================
 
-# ---------- 生成物（可由代码重跑得到）----------
-_*.txt
-_*.log
-_*.out
-pipeline/_run.log
-pipeline/_run.out
-_prompt_preview.txt
-probe2.out
-
-# ---------- 素材与成片（体积大，按需单独备份）----------
-06_资产/
-05_成片/
-10_首尾帧/
-08_测试报告/*/gate_*.txt
-
-# 保留目录结构与说明
-!06_资产/.gitkeep
-!05_成片/.gitkeep
-!10_首尾帧/.gitkeep
-
-# ---------- 仿真项目生成物（fixture 可 rebuild）----------
-# script.json / 锁定词 / 块卡 保留：它们是测试基线，进版本库
-# 但 mock 出来的图片视频不入库（上面已排除 06_资产/）
-
-# ---------- 演示产物 ----------
-演示输出/
-风格对照/
-
-# ---------- 密钥与凭证 ----------
+# ---------- 密钥与凭证（最重要）----------
+# 签名 URL 含 q-ak 访问密钥，绝不入库
+urls.local.json
+*.local.json
 .env
 .env.*
 *.key
 *.pem
 secrets/
 credentials*
+
+# ---------- 演示与素材产物（体积大 / 可重建）----------
+演示输出/
+**/风格对照/**
+06_资产/
+05_成片/
+10_首尾帧/
+
+# 保留目录占位
+!06_资产/.gitkeep
+!05_成片/.gitkeep
+!10_首尾帧/.gitkeep
+
+# ---------- 日志与临时 ----------
+_*.txt
+_*.log
+_*.out
+pipeline/_run.log
+pipeline/_run.out
+pipeline/_push.txt
+pipeline/_v.txt
+pipeline/_sc.txt
+_prompt_preview.txt
+probe2.out
+.git-commit-msg.txt
+*.tmp
+*.bak
+*.log
+tmp/
+temp/
 
 # ---------- Python ----------
 __pycache__/
@@ -58,17 +63,8 @@ venv/
 Thumbs.db
 desktop.ini
 
-# ---------- 日志与临时 ----------
-*.tmp
-*.bak
-*.log
-tmp/
-temp/
-
 # ---------- 模型权重 ----------
 *.safetensors
 *.ckpt
 *.pt
 *.onnx
-
-.git-commit-msg.txt
