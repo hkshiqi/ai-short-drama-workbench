@@ -87,7 +87,8 @@ def build_first_frame(lock: str, size: str, camera: str, expr_desc: str,
                       chars: list[str], outfit_desc: str, scene_env: str,
                       product_desc: str | None, product_moment: str,
                       style_prompt: str = "", suffix: str = QUALITY_SUFFIX_CN,
-                      marker: str = "", echo_marker: bool = False) -> str:
+                      marker: str = "", echo_marker: bool = False,
+                      identity_echo: str = "") -> str:
     """提示词拼装（顺序不可改）：
 
     [景别强制lead] + LOCK_V1 + 景别机位 + EXP表情 + 服装
@@ -114,8 +115,10 @@ def build_first_frame(lock: str, size: str, camera: str, expr_desc: str,
     if style_prompt:
         parts.append(style_prompt)                      # ③ 风格层
     parts.append(enf["tail"])                           # ④ 构图限制（尾部再锁一次）
+    if identity_echo:
+        parts.append(identity_echo)                     # ⑤ 人物身份回声（强风格必加）
     if echo_marker and marker:
-        parts.append(f"重要特征必须清晰可见：{marker}")   # ⑤ 标志物回声（仅尾部一次）
+        parts.append(f"重要特征必须清晰可见：{marker}")   # ⑥ 标志物回声（仅尾部一次）
     parts.append(suffix)
     return "，\n".join(p for p in parts if p)
 
@@ -167,7 +170,8 @@ def run(slug: str = SLUG) -> Gate:
     # ---- 载入风格（第①步锁定）----
     from stylelib import (STYLES, build_negative as style_neg,
                           build_style_prompt, quality_suffix, tier_of,
-                          needs_marker_echo, enforce_shot_size, style_phrase_count)
+                          needs_marker_echo, enforce_shot_size, style_phrase_count,
+                          identity_echo as get_identity_echo, era_compatible)
     style_spec = script["spec"].get("style") or {}
     style_id = style_spec.get("style_id", "")
     overlays = style_spec.get("overlays") or []
@@ -178,11 +182,19 @@ def run(slug: str = SLUG) -> Gate:
     # 画质后缀：与风格层去重，避免同一形容词重复稀释权重
     quality_suffix_final = quality_suffix(style_id, overlays) if style_id else QUALITY_SUFFIX_CN
     echo_marker = needs_marker_echo(style_id, overlays) if style_id else False
+    # 人物身份回声（强风格会磨掉年龄/疤痕）
+    id_echo = get_identity_echo(style_id) if style_id else ""
     g_style_tier = tier_of(style_id) if style_id else "?"
     print(f"  风格：{style_id} [{g_style_tier}档] + {overlays}"
           f"（{style_phrase_count(style_id, overlays)} 短语"
-          f"{'，标志物回声开启' if echo_marker else ''}）")
+          f"{'，标志物回声' if echo_marker else ''}"
+          f"{'，身份回声' if id_echo else ''}）")
     print(f"  后缀（去重后）：{quality_suffix_final}")
+
+    # 风格 ↔ 场景年代 匹配（实测教训：古装风格配现代场景会完全失效）
+    all_scene_ids = {s["id"] for s in script["scenes"]}
+    era_results = {sid: era_compatible(style_id, sid)
+                   for sid in all_scene_ids} if style_id else {}
 
     # 角色标志物（用于标志物前置 + 回声）
     MARKERS = {
@@ -249,7 +261,8 @@ def run(slug: str = SLUG) -> Gate:
                                       prod_moment, style_prompt,
                                       quality_suffix_final,
                                       marker=MARKERS.get(primary, ""),
-                                      echo_marker=echo_marker)
+                                      echo_marker=echo_marker,
+                                      identity_echo=id_echo)
                 vp = build_video_prompt(s["size"], s["move"], s["expr_int"],
                                         ch, dur_sec, has_line, b["scene"])
                 lf = build_last_frame_note(ff, expr_desc)
@@ -356,6 +369,10 @@ def run(slug: str = SLUG) -> Gate:
     g.eq(len({r["style_id"] for r in all_rows}), 1, "全剧 style_id 唯一")
     # 修饰层 ≤2
     g.check(len(overlays) <= 2, "修饰层 ≤2 个", f"{overlays}")
+
+    # --- 2c. 风格 ↔ 场景年代 匹配（实测：古装风格配现代场景会完全失效）---
+    for sid, (ok, msg) in era_results.items():
+        g.check(ok, f"风格与场景 {sid} 年代匹配", msg)
 
     # --- 3. 视频提示词禁止表情变化动词 ---
     for r in all_rows:

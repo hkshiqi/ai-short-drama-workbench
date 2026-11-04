@@ -140,8 +140,11 @@ STYLES: dict[str, dict] = {
         use_for="都市甜宠、校园恋爱",
         prompt_cn="偶像剧柔光画面，柔焦镜效果，高调明亮布光，皮肤通透明亮，空气中有柔光晕，浅粉与米白色调，梦幻唯美",
         prompt_en="romantic soft-focus look, diffused filter effect, high-key bright lighting, luminous clear skin, soft glow halo in air, pale pink and cream tones, dreamy and beautiful",
-        negative="硬光, 冷调, 粗颗粒, 脏",
-        risk=2),
+        # 实测补充（Round2）：柔光会把疤痕/眼袋/法令纹磨掉，角色年轻 8 岁 → 必须显式压制
+        negative="硬光, 冷调, 粗颗粒, 脏, 磨皮, 无瑕疵, 年轻化, 美颜, 皮肤发光, 娃娃脸",
+        risk=2,
+        identity_echo="保持原始年龄感与真实肤质，保留眼袋、法令纹与皮肤纹理，不做美颜磨皮",
+        ),
     "WAR_DESAT": dict(
         name="战争褪色", group="C类型片", tier="B",
         use_for="战争、年代苦难、末世",
@@ -453,6 +456,13 @@ def needs_marker_echo(style_id: str, overlays: list[str] | None = None) -> bool:
     return style_phrase_count(style_id, overlays) > 15
 
 
+def identity_echo(style_id: str) -> str:
+    """人物身份回声：强风格会磨掉年龄/肤质/疤痕 → 结尾再锁一次人物特征
+    实测（Round2）：ROMANCE_SOFT 把 28 岁演员出成 20 岁，疤痕/眼袋全消失。
+    """
+    return STYLES.get(style_id, {}).get("identity_echo", "")
+
+
 def build_negative(style_id: str, overlays: list[str] | None = None) -> str:
     """风格负向词（已含修饰层对应抑制词）"""
     st = STYLES[style_id]
@@ -529,6 +539,71 @@ def validate(style_id: str, overlays: list[str], topic: str | None = None) -> li
 
 def tier_of(style_id: str) -> str:
     return STYLES.get(style_id, {}).get("tier", "?")
+
+
+# ============================================================
+# 风格 ↔ 场景年代匹配（实测教训：古装风格配现代城中村场景，风格完全失效）
+# 场景词描述"这是什么地方"（物理事实），权重高于风格词（渲染方式）。
+# 所以年代/类型不匹配时，风格词会被场景词压掉，白选。
+# ============================================================
+STYLE_ERA = {
+    "ANCIENT_CN": "古代",
+    "INK_WASH": "古代",
+    "FANTASY_EPIC": "古代",
+    "RETRO_90S_CN": "90年代",
+    "RETRO_HK": "90年代",
+    "RETRO_80S": "80年代",
+    "OLD_TV": "80-90年代",
+    "VHS": "80-90年代",
+    "FILM_16MM": "任意",
+    "CYBERPUNK": "未来",
+    "SCIFI_NEON": "未来",
+    "GLITCH": "未来",
+}
+# 场景 id 前缀 → 年代标签（由场景设定决定，可在场景设定里显式标注）
+# ★ 顺序陷阱（负样本回归发现的）：
+#   SCN_FUTURE_STREET 同时含 FUTURE 和 STREET。若按字典枚举顺序匹配，
+#   STREET 先命中就误判成"现代"。所以必须按**优先级**匹配，找最先出现的键里的最高优先级。
+SCENE_ERA_HINTS = {
+    # 高优先级（强特征，优先判定）
+    "ANCIENT": "古代", "PALACE": "古代", "TEMPLE": "古代", "古": "古代",
+    "FUTURE": "未来", "LAB": "未来", "CYBER": "未来", "未来": "未来",
+    "RETRO": "90年代", "OLD": "80-90年代",
+    # 低优先级（泛化词，最后才判）
+    "ALLEY": "现代", "ROOM": "现代", "STREET": "现代", "OFFICE": "现代",
+}
+SCENE_ERA_PRIORITY = ["ANCIENT", "PALACE", "TEMPLE", "古",
+                      "FUTURE", "LAB", "CYBER", "未来",
+                      "RETRO", "OLD",
+                      "ALLEY", "ROOM", "STREET", "OFFICE"]
+
+
+def scene_era(scene_id: str) -> str:
+    """从场景 id 推断年代（按优先级匹配，避免 SCN_FUTURE_STREET → 现代 这种误判）"""
+    up = scene_id.upper()
+    for key in SCENE_ERA_PRIORITY:
+        if key.upper() in up:
+            return SCENE_ERA_HINTS[key]
+    return "现代"   # 默认现代
+
+
+def era_compatible(style_id: str, scene_id: str) -> tuple[bool, str]:
+    """风格年代 与 场景年代 是否兼容"""
+    s_era = STYLE_ERA.get(style_id, "任意")
+    c_era = scene_era(scene_id)
+    if s_era == "任意" or c_era == "任意":
+        return True, f"{style_id}({s_era}) 与 {scene_id}({c_era}) 兼容"
+    # 强绑定：古装风格只能用古装场景；未来风格只能用未来场景
+    if s_era == "古代" and c_era != "古代":
+        return False, (f"古装风格 {style_id} 配了 {c_era} 场景 {scene_id} "
+                       f"-> 场景词会压掉风格词，风格将失效")
+    if s_era == "未来" and c_era != "未来":
+        return False, (f"未来风格 {style_id} 配了 {c_era} 场景 {scene_id} "
+                       f"-> 科技元素会与场景冲突")
+    if s_era in ("90年代", "80年代", "80-90年代") and c_era in ("古代", "未来"):
+        return False, (f"年代风格 {style_id} 配了 {c_era} 场景 {scene_id} "
+                       f"-> 年代感无法成立")
+    return True, f"{style_id}({s_era}) 与 {scene_id}({c_era}) 兼容"
 
 
 def list_by_group() -> dict[str, list[str]]:
