@@ -70,3 +70,5 @@ temp/
 *.ckpt
 *.pt
 *.onnx
+
+.git-commit-msg.txt
